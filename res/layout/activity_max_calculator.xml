@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+         android:id="@+id/ScrollView01"
+		 android:layout_width="fill_parent"
+		 android:layout_height="fill_parent" >
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical" >
+	
+	    <TextView
+	        android:id="@+id/textView1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="24dp"
+	        android:text="One Rep Max Calculator"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	    <EditText
+	        android:id="@+id/editText1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBottom="@+id/textView2"
+	        android:layout_toRightOf="@+id/textView2"
+	        android:ems="10"
+	        android:inputType="numberDecimal"
+	        android:maxLength="5" />
+	
+	    <TextView
+	        android:id="@+id/textView3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/textView2"
+	        android:layout_marginTop="36dp"
+	        android:text="Number of Reps:"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	    <EditText
+	        android:id="@+id/editText3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/textView3"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="80dp"
+	        android:clickable="false"
+	        android:editable="false"
+	        android:ems="10"
+	        android:hint="          One Rep Max"
+	        android:inputType="none"
+	        android:longClickable="false" >
+	
+	        <requestFocus />
+	    </EditText>
+	
+	    <Button
+	        android:id="@+id/button1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/editText3"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="28dp"
+	        android:text="Calculate" />
+	
+	    <EditText
+	        android:id="@+id/editText2"
+	        android:layout_width="150dp"
+	        android:layout_height="wrap_content"
+	        android:layout_above="@+id/editText3"
+	        android:layout_alignRight="@+id/editText1"
+	        android:ems="10"
+	        android:inputType="number"
+	        android:maxLength="2" />
+	
+	    <TextView
+	        android:id="@+id/textView2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/textView1"
+	        android:layout_marginTop="74dp"
+	        android:text="Weight Lifted: "
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	</RelativeLayout>
+</ScrollView>
